@@ -17,36 +17,10 @@
 
 </head>
 <style>
-    table {
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 50px;
-        /*color: #092215;*/
-        border-collapse: separate;
-        border-spacing: 10px 10px;
-        table-layout: fixed;
-        font-size: 15px;
-    }
 
     h1 {
         color: #092215;
     }
-
-    table, td {
-        height: 100px;
-        width: 300px;
-        padding-left: 20px;
-    }
-
-    .white_bg {
-        background-color: rgb(255, 255, 255, 0.3);
-    }
-
-    .beige_bg {
-        background-color: rgb(9, 34, 24, 0.9);
-        /*background-color: rgb(09, 34, 21, 0.5);*/
-    }
-
     .second_word {
         color: white;
         font-size: 10px;
@@ -67,10 +41,50 @@
         margin-bottom: 100px
     }
 
-    .x{
+    .x {
         position: absolute;
         bottom: 100px;
     }
+
+    .deliveredProjects {
+        margin: 50px;
+        background-color:#927e5e;
+        padding: 30px;
+
+    }
+
+    .deliveredProjects .title {
+        font-size: 40px;
+        color:rgb(49, 49, 49);
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .cardsContainer {
+        /* width: 90vw; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        background-color: #0c2a1a;
+        color: white;
+        width: 300px;
+        height: 100px;
+        margin: 5px;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+
+    .sub {
+        font-size: 10px;
+        color:#faf9f6;
+    }
+
 </style>
 <body>
 <div class="outer-wrapper homepage page-background-black">
@@ -110,18 +124,18 @@
         <!--end page-header-->
 
         <div id="page-content">
-            <div class="hero-section is-slider parallax-wrapper" >
-                <div class="hero-wrapper" >
+            <div class="hero-section is-slider parallax-wrapper">
+                <div class="hero-wrapper">
                     <div class="slider owl-carousel">
-                        <div class="slide bg-transfer" >
-<!--                            <img src="assets/img/slider/bg1.jpeg" alt="">-->
+                        <div class="slide bg-transfer">
+                            <!--                                                        <img src="assets/img/slider/bg1.jpeg" alt="">-->
                             <img src="assets/img/slider-02.jpg" alt="">
                         </div>
                         <div class="slide bg-transfer">
                             <img src="assets/img/slider/bg2.jpeg" alt="">
                         </div>
                         <div class="slide bg-transfer">
-                            <img src="assets/img/slider/bg3.jpg" alt="" >
+                            <img src="assets/img/slider/bg3.jpg" alt="">
 
                         </div>
                     </div>
@@ -179,64 +193,82 @@
             </div>
             <!--end block-->
 
-            <hr>
 
-            <div class="block">
-                <div class="container">
-                    <div class="section-title">
-                        <h1 style="font-weight: lighter">DELIVERING SUCCESSFUL PROJECTS<br><span
-                                style="font-weight: bold">DURING 2021/2022</span></h1>
-                    </div>
-                    <!--end title-->
-
-                    <div class="slide ">
-                        <table>
-                            <tr class="beige_bg">
-                                <td>MZ Family Beach Compound<br>
-                                    El - Alamein
-                                </td>
-                                <td>Greek Village - Landscape</td>
-                                <td>Marassi Bay - Village A<br><span class="second_word">92 Units</span></td>
-
-
-                            </tr>
-
-                            <tr class="beige_bg">
-                                <td>Greek Village<span class="second_word"><br>177 Villas<br>18 Buildings<br>7 Bunglows</span>
-                                </td>
-                                <td>H.E Mohamed El Abbar<span class="second_word"><br>VIP Villa</span></td>
-
-                                <td>Office Park - Mivida<br><span class="second_word">7 Buildings</span></td>
-
-
-                            </tr>
-                            <tr class="beige_bg">
-                                <td>Marina Residence - R2<br><span class="second_word">Walkway</span></td>
-                                <td>Celia Village<br><span class="second_word">42 Units + Guard House</span></td>
-                                <td>June<br><span class="second_word">2</span></td>
-
-                            </tr>
-                            <tr class="beige_bg">
-                                <td>Riva Lagoons Village<br><span class="second_word">72 Plex</span></td>
-                                <td>PKG 89 - Uptown Cairo<br><span class="second_word">2</span></td>
-                                <td>GLC Headquarters<br><span class="second_word">Concrete - Turn-key</span></td>
-                            </tr>
-                        </table>
-                    </div>
-
-
-                    <!--end featured-works-carousel-->
+            <div class="deliveredProjects">
+                <div class="title">
+                    DELIVERING SUCCESSFUL PROJECTS
+                    <span style="font-weight: 600">DURING 2021/2022</span>
                 </div>
-                <!--end container-->
-                <div class="bg black opacity-10">
-                    <div class="image opacity-60 bg-transfer bg-fixed"></div>
+                <div class="cardsContainer">
+                    <div class="card">MZ FAMILY BEACH COMPOUND EL - ALAMEIN</div>
+                    <div class="card">GREEK VILLAGE - LANDSCAPE</div>
+                    <div class="card">MARASSI BAY - VILLAGE A
+                        <div class="wrapper">
+                            <div class="sub">92 UNITS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        GREEK VILLAGE
+                        <div class="wrapper">
+                            <div class="sub">177 VILLAS</div>
+                            <div class="sub">18 BUILDINGS</div>
+                            <div class="sub">7 BUNGLOWS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        H.E MOHAMED EL ABBAR
+                        <div class="wrapper">
+                            <div class="sub">VIP VILLA</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        OFFICE PARK - MIVIDA
+                        <div class="wrapper">
+                            <div class="sub">7 BUILDINGS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        MARINA RESIDENCE - R2
+                        <div class="wrapper">
+                            <div class="sub">WALKWAY</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        CELIA VILLAGE
+                        <div class="wrapper">
+                            <div class="sub">42 UNITS + GUARD HOUSE</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        JUNE
+                        <div class="wrapper">
+                            <div class="sub">2</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        RIVA LAGOONS VILLAGE
+                        <div class="wrapper">
+                            <div class="sub">72 PLEX</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        PKG 89 - UPTOWN CAIRO
+                        <div class="wrapper">
+                            <div class="sub">2</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        GLC HEADQUARTERS
+                        <div class="wrapper">
+                            <div class="sub">CONCRETE - TURN-KEY</div>
+                        </div>
+                    </div>
                 </div>
-                <!--end bg-->
+
+
             </div>
-            <!--end block-->
 
-
-            <hr>
+            
 
             <div id="projects" class="block">
                 <div class="container">
