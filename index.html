@@ -21,6 +21,7 @@
     h1 {
         color: #092215;
     }
+
     .second_word {
         color: white;
         font-size: 10px;
@@ -47,18 +48,19 @@
     }
 
     .deliveredProjects {
-        background-color:#927e5e;
+        background-color: #927e5e;
         padding: 30px;
 
     }
 
     .deliveredProjects .title {
         font-size: 40px;
-        color:rgb(9,31,24);
+        color: rgb(9, 31, 24);
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }
+
     .cardsContainer {
         /* width: 90vw; */
         display: flex;
@@ -67,7 +69,7 @@
         justify-content: center;
     }
 
-    .card_a,.card_b{
+    .card_a, .card_b {
         color: white;
         width: 300px;
         height: 100px;
@@ -75,24 +77,49 @@
         padding: 20px;
         line-height: 1.5;
     }
+
     .card_a {
-        background-color: rgba(9,31,24,0.8);
+        background-color: rgba(9, 31, 24, 0.8);
     }
 
-    .card_b{
-        background-color: rgba(9,31,24,1);
+    .card_b {
+        background-color: rgba(9, 31, 24, 1);
     }
-
 
 
     .sub {
         font-size: 10px;
-        color:#faf9f6;
+        color: #faf9f6;
     }
 
-    .bg-transfer img{
+    .bg-transfer img {
         height: auto;
         width: auto;
+    }
+
+    .partners {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .partner {
+        background-color: pink;
+        margin: auto;
+    }
+    .partners_title{
+        color: #092215;
+        margin-bottom: 40px;
+    }
+    .partners_title h1 span{
+        font-weight: bold;
+        font-size: 50px;
+
+    }
+    .partners_title p{
+        opacity: 1;
+        font-size: 20px;
     }
 
 </style>
@@ -277,7 +304,6 @@
 
 
             </div>
-
 
 
             <div id="projects" class="block">
@@ -511,37 +537,20 @@
             <!--end block-->
 
 
+
+
             <div class="block">
                 <div class="container">
-                    <div class="section-title">
-                        <h1 style="font-weight: lighter ; font-size: 30px">SUCCESS<br><span
-                                style="font-weight: bold ; font-size: 50px">PARTNERS</span></h1>
-                        <p style="font-size: 20px ; opacity: 1 ; margin-top: 40px ; color: #092215">WE TAKE PRIDE IN
-                            WORKING WITH OUR
-                            REPUTABLE JV’S TO BUILD AND DEVELOP WORTHY PROJECTS.</p>
+                    <div class="partners_title">
+                        <h1>SUCCESS<br><span>PARTNERS</span></h1>
+                        <p>WE TAKE PRIDE IN WORKING WITH OUR REPUTABLE JV’S TO BUILD AND DEVELOP WORTHY PROJECTS.</p>
                     </div>
-                    <div class="logos" style="margin-top: 50px">
-
-                        <div class="logo ">
-                            <a href="#"><img src="assets/img/partners/logos%20brand/1.png" alt=""></a>
-                        </div>
-                        <!--/ .logo-->
-                        <div class="logo ">
-                            <a href="#"><img src="assets/img/partners/logos%20brand/2.png" alt=""></a>
-                        </div>
-                        <!--/ .logo-->
-                        <div class="logo ">
-                            <a href="#"><img src="assets/img/partners/logos%20brand/3.png" alt=""></a>
-                        </div>
-                        <!--/ .logo-->
-                        <div class="logo ">
-                            <a href="#"><img src="assets/img/partners/logos%20brand/4.png" alt=""></a>
-                        </div>
-                        <!--/ .logo-->
-                        <div class="logo ">
-                            <a href="#"><img src="assets/img/partners/logos%20brand/5.png" alt=""></a>
-                        </div>
-                        <!--/ .logo-->
+                    <div class="partners">
+                        <div class="partner"><img src="assets/img/partners/logos%20brand/1.png" alt=""></div>
+                        <div class="partner"><img src="assets/img/partners/logos%20brand/2.png" alt=""></div>
+                        <div class="partner"><img src="assets/img/partners/logos%20brand/3.png" alt=""></div>
+                        <div class="partner"><img src="assets/img/partners/logos%20brand/4.png" alt=""></div>
+                        <div class="partner"><img src="assets/img/partners/logos%20brand/5.png" alt=""></div>
                     </div>
                     <!--/ .logos-->
                 </div>
@@ -550,7 +559,6 @@
                 </div>
                 <!--end bg-->
             </div>
-
         </div>
         <!--end page-content-->
 
