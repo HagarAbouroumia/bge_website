@@ -1671,7 +1671,7 @@ button:hover, button:active, button:focus {
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   /*background-color: black;*/
-    background-color: #092215;
+  background-color: #092215;
 
 }
 .btn.arrow:after {
